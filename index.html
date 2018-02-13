@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+
+    <style type="text/css">
+
+    .crystal-image {
+      width: 300px;
+      height: 300px;
+    }
+
+    </style>
+
+	
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">		
+
+    
+
+
+</head>
+
+<body>
+
+	<div class="jumbotron">
+    <h1 class="text-center">Crystal Counter</h1>
+    <h3 class="text-center">Select Crystals and Add Their Points to Equal the Total Number Given!</h3>
+	</div>
+
+<div class="container">
+
+    <div class="row">
+		
+	<div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Crystal Point Goal:  <span id="goalTotal"></span></h3>
+            </div>
+
+            <div class="panel-body">  
+ 
+                <button id="button-Ruby" class = "crystals" img src="images/stock-photo-ruby-gem-stone-round-cut-isolated-660518359.jpg/350x150" value="rubyValue"><h1>R</h1></button>
+ 
+                <button id="button-Emerald" class = "crystals" img src="images/glowing-gem-3553865.jpg/350x150" value="emeraldValue"><h1>E</h1></button>
+  
+                <button id="button-Citrine" class = "crystals" img src="images/citrine-gem-7425420.jpg/350x150" value="citrineValue"><h1>A</h1></button>
+
+           	    <button id="button-Diamond" class = "crystals" img src="images/cracked-diamond-1391541486hWj.jpeg/350x150" value="diamondValue"><h1>D</h1></button>
+
+            </div>
+
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Running Total:  <span id="runningTotal"></span></h3>
+                </div>
+            </div>
+        </div>   
+
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Wins:  <span id="wins"></span></h3>
+                </div>
+            </div>
+        </div>   
+
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Losses:  <span id="losses"></span></h3>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ //   <script type="text/javascript" src="script.js">
+
+
+//        var totalGoalValue = #GoalTotal[Math.floor(Math.random() * 100 + 20)];
+
+//        var rubyValue = #Ruby [Math.floor(Math.random() * 10 + 2)];
+
+//        var emeraldValue = #Emerald [Math.floor(Math.random() * 10 + 2)];
+
+//        var citrineValue = #Citrine [Math.floor(Math.random() * 10 + 2)];
+
+//
+
+
+
+
+
+
+
+
+
+//        var diamondValue = #Diamond [Math.floor(Math.random() * 10 + 2)];
+
+
+  //      $("#number-to-guess").text(targetNumber);
+
+//        var counter = 0;
+
+//        var wins = 0;
+
+//        var losses = 0;
+
+//        $("#Ruby").on("click", function() {
+//            console.log('clicked')
+//        })      
+
+ //       $(".crystals").on("click", function() {
+
+        
+ //       if () return;
+
+  
+//    var numberOptions = [rubyValue, emeraldValue, citrineValue, diamondValue];
+
+  // Next we create a for loop to create crystals for every numberOption.
+//    for (var i = 0; i < numberOptions.length; i++) {
+
+
+//    var imageCrystal = $("<img>");
+    
+//    imageCrystal.addClass("crystal-image");
+    // Each imageCrystal will be given a data attribute called data-crystalValue.
+    // This data attribute will be set equal to the array value.
+ //   imageCrystal.attr("data-crystalvalue", numberOptions[i]);
+
+    // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
+//    $("crystals").append(imageCrystal);
+ // }
+
+  // This time, our click event applies to every single crystal on the page. Not just one.
+//  $(".crystal-image").on("click", function() {
+
+    // Determining the crystal's value requires us to extract the value from the data attribute.
+    // Using the $(this) keyword specifies that we should be extracting the crystal value of the clicked crystal.
+    // Using the .attr("data-crystalvalue") allows us to grab the value out of the "data-crystalvalue" attribute.
+    // Since attributes on HTML elements are strings, we must convert it to an integer before adding to the counter
+    
+//    var crystalValue = ($(this).attr("data-crystalvalue"));
+//    crystalValue = parseInt(crystalValue);
+    // We then add the crystalValue to the user's "counter" which is a global variable.
+    // Every click, from every crystal adds to the global counter.
+//    counter += crystalValue;
+
+    // All of the same game win-lose logic applies. So the rest remains unchanged.
+//    alert("New score: " + counter);
+
+//    if (counter === targetNumber) {
+//      alert("You win!");
+//    }
+
+//    else if (counter >= targetNumber) {
+//      alert("You lose!!");
+//    }
+
+//  });
+//  HERE
+
+//        <div class="col-lg-6">
+//        	<div class="panel panel-default">
+//                <div class="panel-heading">
+//                    <h3 class="panel-title">Running Total:  
+//                      <span id="runningTotal"></span></h3>
+//                </div>
+//                <div class="panel-body">
+//                    <h1 id=""></h1>
+//                    <h1 id="operator"></h1>
+//                    <h1 id="second-number"></h1>
+//                    <hr>
+//                    <h1 id="result"></h1>
+//                </div>
+//            </div>
+//        </div>
+	
+ //   </script>
+
+</body>
+
+</html>
